@@ -22,6 +22,7 @@ form label{
 form input{
     text-transform: capitalize;
     display:block;
+    min-width: 150px;
     margin: 0 0 20px 0;
     background-color: rgba(128, 0, 128, 1);
     margin-left: 10%;
@@ -51,7 +52,45 @@ form input{
     width: 100px;
     height: 40px;
     cursor: pointer;
+    transition: 0.4s;
+}
+#submit:hover{
+    font-size: 15px;
+    background-color: rgba(255, 200, 0, 1);
+    color:rgba(128, 0, 128, 1);
+    border: 1px solid rgb(255, 255, 255);
+}
+/* for tablet */
+@media screen and (max-width:1024px) {
+    main{
+        height: 100vh;
+    }
+}
+/* for phone */
+@media screen and (max-width:500px) {
+    main h1{
+        font-size: 25px;
+    }
+    form input{
+        min-width: 200px;
+        margin-left: 50px; 
+        text-align: center;
+    }
+    main{
+        height: 95vh;
+    }
 }
 
-/* for ipad */
-/* for phone */
+@media screen and (max-width:320px) {
+    main h1{
+        font-size: 20px;
+    }
+    form input{
+        min-width: 200px;
+        margin-left: 20px; 
+        text-align: center;
+    }
+    main{
+        height: 95vh;
+    }
+}
