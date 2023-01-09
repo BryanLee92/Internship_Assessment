@@ -60,6 +60,7 @@ app.post('/register', (req, res)=>{
             console.log(error.message);
         } else {
             console.log(data);
+            res.status(200).json(data);
         };
     });
 });
