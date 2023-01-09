@@ -10,7 +10,7 @@ const state = document.getElementById("state");
 const btn = document.getElementById("submit");
 
 //backendURL
-const baseURL = "http://localhost:3030/";
+const baseURL = "http://localhost:10000/";
 
 // Max date
 let max = new Date().toISOString().split("T")[0];
