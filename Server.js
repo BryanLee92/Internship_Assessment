@@ -9,7 +9,7 @@ const findPostcode = malaysia.findPostcode;
 const app = express();
 
 //port
-const port = process.env.PORT || 3030;
+const port = process.env.PORT || 10000;
 
 //Database
 const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/internship";
