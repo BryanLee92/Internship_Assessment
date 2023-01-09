@@ -1,0 +1,57 @@
+body{
+    margin: 0 auto;
+    background-color: aliceblue;
+    width: 80%;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 90vh;
+    border-radius: 30px;
+    box-shadow: -22px 40px 5px 0px rgba(0,0,0,0.75);
+    border:rgba(255, 200, 0, 1) 2px solid;
+}
+main h1{
+    text-align: center;
+    color: rgba(255, 200, 0, 1);
+}
+form label{
+    color: rgba(255, 200, 0, 1);
+    text-transform: uppercase;
+    margin-left: 10%;
+}
+form input{
+    text-transform: capitalize;
+    display:block;
+    margin: 0 0 20px 0;
+    background-color: rgba(128, 0, 128, 1);
+    margin-left: 10%;
+    color: rgba(255, 200, 0, 1);
+    border-radius: 20px;
+    outline: none;
+}
+
+#name{
+    width: 30%;
+    height: 50px; 
+}
+#date{
+    text-align: center;
+    width: 10%;
+    height: 25px;
+}
+#address{
+    width: 50%;
+    height: 50px;
+}
+#postcode, #city, #state{
+    width: 10%;
+    height: 25px;
+}
+#submit{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* for ipad */
+/* for phone */

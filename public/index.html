@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>Enter Your information:</h1>
+        <hr />
+        <form>
+            <label for="name" >Full Name:</label>
+            <input 
+            type="text" 
+            placeholder="Enter Your Full Name" 
+            name="name" 
+            id="name" 
+            minlength="3"
+            maxlength="20"
+            spellcheck="false"
+            required />
+
+            <label for="date" >Date of Birth:</label>
+            <input 
+            type="date" 
+            name="date" 
+            id="date" 
+            min="1979-12-31" 
+            spellcheck="false"
+            required/>
+
+            <label for="address" >Address:</label>
+            <input 
+            type="text" 
+            placeholder="Address" 
+            name="address" 
+            id="address"
+            minlength="10"
+            spellcheck="false"
+            required/>
+
+            <label for="postcode" >Postcode:</label>
+            <input 
+            type="text" 
+            placeholder="Enter Your Postcode"
+            onchange="searchPostcode(event.target)"
+            minlength="5"
+            maxlength="5"
+            name="postcode" 
+            id="postcode"
+            onkeypress="return restrictAlphabets(event)"
+            spellcheck="false"
+            required/>
+
+            <label for="city" >city:</label>
+            <input 
+            type="text" 
+            placeholder="city" 
+            name="city" 
+            spellcheck="false"
+            id="city" />
+
+            <label for="state" >State:</label>
+            <input 
+            type="text" 
+            placeholder="State" 
+            name="state"
+            spellcheck="false"
+            id="state" />
+
+            <input type="button" id="submit" value="Submit" />
+        </form>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
